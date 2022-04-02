@@ -3,7 +3,7 @@ use std::fs::OpenOptions;
 use std::io::{self, Read, Seek, SeekFrom};
 use std::os::unix::io::AsRawFd;
 use std::process;
-const BUFFER_SIZE: u64 = 512;
+const BUFFER_SIZE: u64 = 1_000_000;
 
 fn main() -> io::Result<()> {
     let filename = std::env::args().nth(1).expect("Please supply a filename");
