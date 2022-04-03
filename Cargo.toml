@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 libc = "0.2.121"
+maligned = { version = "0.2.1", features = ["align-4k"] }
