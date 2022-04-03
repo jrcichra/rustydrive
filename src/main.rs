@@ -46,6 +46,6 @@ fn main() -> io::Result<()> {
 
         location += BUFFER_SIZE;
 
-        println!("{} MB", location);
+        println!("{}", location);
     }
 }
